@@ -72,7 +72,7 @@ python celltype_classifier.py
 - Trains Random Forest on k-mer features
 - Evaluates precision, recall, F1-score
 - Saves confusion matrices & ROC curves per `k`
-- Exports `rocdata_celltype_$k{k}$.txt` and `auc_celltype.txt`
+- Exports `rocdata_celltype_k{k}.txt` and `auc_celltype.txt`
 
 ---
 
@@ -84,7 +84,7 @@ python cancer_classifier.py
 - Maps GM12878, hESC → non-cancer (0), K562, HepG2 → cancer (1)
 - Trains and evaluates across k-mer sizes
 - Outputs confusion matrices, ROC plots
-- Saves `rocdata_cancer_k${k}$.txt` and `auc_cancer.txt`
+- Saves `rocdata_cancer_k{k}.txt` and `auc_cancer.txt`
 
 ---
 
