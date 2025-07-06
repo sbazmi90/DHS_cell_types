@@ -4,3 +4,12 @@ matplotlib
 seaborn
 scikit-learn
 biopython
+Bio
+pytest-shutil
+indexed-gzip
+collection
+argparse
+pathlib
+marimo
+gdown
+requests

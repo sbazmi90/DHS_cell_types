@@ -1,15 +1,4 @@
-import argparse
-import gzip
-import os
-import shutil
-from pathlib import Path
-import marimo as mo
-
-import gdown
-import numpy as np
-import pandas as pd
-import requests
-from Bio import SeqIO
+from Module import *
 
 
 

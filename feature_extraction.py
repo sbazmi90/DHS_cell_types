@@ -1,8 +1,6 @@
 # feature_extraction.py
 
-from Bio import SeqIO
-from collections import Counter
-import math
+from Module import *
 
 def gc_content(seq):
     gc = sum(1 for b in seq if b in "GCgc")
