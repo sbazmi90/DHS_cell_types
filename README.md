@@ -11,6 +11,32 @@ We use k-mer frequency representations, GC content, and entropy as sequence feat
 
 ## 📁 Project Structure
 
+
+
+
+## 🧬 Task 1: DHS BED File Generation and Genomic Mapping
+
+Before classification, we identified cell-type-specific DHS regions from a master dataset and converted them into `.bed` format.
+
+We used a script (`generate_bedfiles_from_ftr.py`) to extract rows from the `master_dataset.ftr` file and saved DHS coordinates for each cell line:
+- GM12878
+- hESCT0
+- HepG2
+- K562
+
+Each `.bed` file was then mapped to hg38 genomic coordinates using `bedtools`:
+
+```bash
+bedtools getfasta -fi hg38.fa -bed <cellline>.bed -fo <cellline>_DHS_sequences.fa
+```
+
+The resulting FASTA files were used as input for Task 2 sequence-based classification.
+
+## 🧪 Task 2: Sequence Classification Using k-mer and ML
+
+We trained machine learning models to classify genomic sequences from DHS regions.
+
+
 ```
 .
 ├── cancer_classifier.py           # Binary classifier (Cancer vs. Non-Cancer)
