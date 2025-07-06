@@ -5,7 +5,7 @@ This project explores whether accessible DNA sequences (DNase I hypersensitive s
 1. **Cell Type Identity** (e.g., GM12878, HepG2, K562, hESC)
 2. **Cancer vs. Non-Cancer Phenotype**
 
-We use k-mer frequency representations, GC content, and entropy as sequence features to train Random Forest classifiers. Performance is evaluated across a range of k-mer sizes (`k = 2,3,4,5,6,7,8`).
+We use k-mer frequency representations, GC content, and entropy as sequence features to train Random Forest classifiers. Performance is evaluated across a range of k-mer sizes (`k = 2,3,4,5,6`).
 
 ---
 
