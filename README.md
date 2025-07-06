@@ -16,10 +16,10 @@ We use k-mer frequency representations, GC content, and entropy as sequence feat
 
 ## 🧬 Task 1: DHS BED File Generation and Genomic Mapping
 
-Before classification, we identified cell-type-specific DHS regions from a master dataset and converted them into `.bed` format.
+Before classification, we identified cell-type-specific DHS regions from a master dataset (downloaded by marimo master dataset github page) and converted them into `.bed` format.
 
 We used a script (`generate_bedfiles_from_ftr.py`) to extract rows from the `master_dataset.ftr` file and saved DHS coordinates for each cell line:
-- GM12878
+- GM12878 (already in the code) 
 - hESCT0
 - HepG2
 - K562
