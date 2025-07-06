@@ -127,3 +127,9 @@ python cancer_classifier.py
 
 ---
 
+
+## 📊 Visualization
+
+| File                             | Description                                   |
+|----------------------------------|-----------------------------------------------|
+| `plot.py`                        | Plot curves for both types of classification  |
